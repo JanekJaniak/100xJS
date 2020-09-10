@@ -1,0 +1,22 @@
+*:focus,*:hover{
+    outline:none;
+}
+
+
+div{
+    height: 100vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;  
+    align-items: center;  
+}
+
+button {
+    height: 60px;
+    width: 200px;
+    font-size: 1em;
+    font-weight: bold; 
+    border-radius: 20px;
+    border: 6px black solid;
+    background-color: grey;
+}

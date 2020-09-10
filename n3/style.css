@@ -1,0 +1,35 @@
+*:focus,*:hover{
+    outline:none;
+}
+
+*{
+    margin:0;
+    background-color:orange;
+}
+
+.quoteWrapper {
+    height: 100vh;
+    display: flex; 
+    justify-content: center;  
+    align-items: center;
+
+}
+
+.quoteContainer {
+    height: 40vh;
+    width:50%;
+    background-color:blue; 
+    border-radius: 20px; 
+    border: dotted 5px pink;
+}
+
+
+button {
+    height: 60px;
+    width: 200px;
+    font-size: 1em;
+    font-weight: bold; 
+    border-radius: 20px;
+    border: 6px black solid;
+    background-color: grey;
+}
