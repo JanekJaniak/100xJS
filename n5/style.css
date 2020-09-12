@@ -1,0 +1,53 @@
+*:focus,*:hover{
+    outline:none;
+}
+
+*{
+    margin:0;
+}
+
+
+button{
+    width: 100%;
+    height: 7vh;
+    font-size: auto;
+    font-weight: 1000;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 80%;
+    box-shadow: 5px 5px 5px 0  rgb(224, 131, 24);
+    background-color: red;
+}
+.wrapper{
+    height: 100vh;
+    display: flex; 
+    justify-content: center;  
+    align-items: center;
+    background-image:url("bg.jpg");
+    background-size:cover;
+}
+.container{
+    height: 50vh;
+    width: 30%;
+    padding: 1% 1%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    opacity: 80%;
+    box-shadow: 2pc 2pc 3pc 0  black;
+}
+
+.buttons{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;  
+}
+h1{
+    font-size: 10rem;
+}
+h5{
+    font-size: 2rem;
+}
