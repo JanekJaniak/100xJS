@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+*:focus,*:hover{
+    outline:none;
+}
+ .wrapper{
+     height: 100vh;
+     background-color: grey;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .slider{
+     height: 70vh;
+     width: 50%;
+     display: flex;
+     background-image: url('bkstart.jpg');
+     background-size: 100%;
+     background-repeat: no-repeat;
+     align-items: center;
+     justify-content: center;
+     justify-content: space-between;
+     border-radius: 2%;
+ }
+button{
+    border-radius: 50%;
+    height: 5pc;
+    width: 5pc;
+    font-size: 2rem;
+    border-color: transparent;
+    transform: translateX(30px);
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+    border-color: transparent;
+}
+.forward{
+    transform: translateX(50px);
+    box-shadow: 5px 5px 5px 0  black;
+}
+.back{
+    transform: translateX(-50px);
+    box-shadow: -5px 5px 5px 0  black
+
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
