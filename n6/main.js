@@ -9,34 +9,29 @@ const load=()=>{
 }
 load();
 
+const changeImg=()=>{
+  currentImg=bikes[active];
+  image.style.backgroundImage = `url(${currentImg})`;
+}
+
 btn.forEach(function(button){
     button.addEventListener('click', function(e){
       if (button.classList.contains('forward')){
-        if(active === bikes.length -1){
-          console.log(`if ${active}`);
+        if(active === bikes.length -1){        
           active = 0
-          currentImg=bikes[active];
-          image.style.backgroundImage = `url(${currentImg})`;
+          changeImg();
         }else{
-          console.log(`else ${active}`);  
           active++;
-          currentImg=bikes[active];
-          image.style.backgroundImage = `url(${currentImg})`;
+          changeImg();
         }
       }else{
         if(active===0){
-          console.log(`if back ${active}`);
           active=bikes.length-1;
-          console.log(`if back po ${active}`)
-          currentImg=bikes[active];
-          image.style.backgroundImage = `url(${currentImg})`;
+          changeImg();
         }else{
-          console.log(`else back ${active}`);
           active--;
-          currentImg=bikes[active];
-          image.style.backgroundImage = `url(${currentImg})`;
+          changeImg();
         }
-
       }
     }
   )
