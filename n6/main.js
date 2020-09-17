@@ -19,19 +19,17 @@ btn.forEach(function(button){
       if (button.classList.contains('forward')){
         if(active === bikes.length -1){        
           active = 0
-          changeImg();
         }else{
           active++;
-          changeImg();
         }
+        changeImg();
       }else{
         if(active===0){
           active=bikes.length-1;
-          changeImg();
         }else{
           active--;
-          changeImg();
         }
+        changeImg();
       }
     }
   )
