@@ -3,16 +3,13 @@ const image=document.querySelector('.slider');
 const bikes=['b1.jpg', 'b2.jpg', 'b3.jpg', 'b4.jpg'];
 let active =0;
 
-const load=()=>{
-  currentImg=bikes[active];
-  image.style.backgroundImage = `url(${currentImg})`;
-}
-load();
 
 const changeImg=()=>{
   currentImg=bikes[active];
   image.style.backgroundImage = `url(${currentImg})`;
 }
+
+changeImg();
 
 btn.forEach(function(button){
     button.addEventListener('click', function(e){
