@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: black
+}
+*:focus,*:hover{
+    outline:none;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    background-image: url('img/background.jpg');
+    background-repeat: repeat-y;
+    height: 100vh;
+    text-align: center;
+    padding-top: 30px;
+}
+h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px grey;
+}
+.wrapper {
+    margin-top: 30px;
+}
+.btn-sweets {
+    font-size: 1.3em;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: lightpink;
+    border: solid 2px purple;
+    transition: 0.5s;
+    margin: 0 10px;    
+}
+.btn-sweets:hover {
+    color: white;
+    background-color: purple;
+}
+.search {
+    margin-top: 30px;
+}
+.search input {
+    font-size: 1.1em;
+    height: 30px;
+    border-radius: 3px;
+    background-color: white;
+    border: solid 2px purple;
+    width: 500px;
+}
+.search button {
+    font-size: 1.1em;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: lightpink;
+    border: solid 2px purple;
+    transition: 0.5s;
+    margin: 0 5px;
+}
+.search button:hover {
+    color: white;
+    background-color: purple;
+}
+.allSweets {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.sweets {
+    width: 300px;
+    height: 280px;
+    border: solid 5px white;
+    background-color: white;
+}
+.sweetsImg img {
+    width: 100%;
+    
+}
+.sweetsCaption {
+    background-color: white;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
